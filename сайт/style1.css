@@ -1,0 +1,255 @@
+body {
+    margin: 0 auto;
+    min-height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Основная страница и Задний фон*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+
+    background: url("img/background.jpg") 
+    center no-repeat;
+    background-size: cover;
+} 
+
+/*Навигационнле меню*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    border-radius: 100%;
+}
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav_text {
+    font-family:Helvetica, sans-serif;
+    color:white;
+    font-size: 40px; 
+    font-weight: 600; 
+    text-decoration: none
+}
+.nav_text {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    transition: color .2s linear;
+}
+.nav_text:hover {
+    color: #7074bf;
+}
+
+.header_linner {
+    display: flex;
+    align-items: center;
+}
+
+/*Бренд*/
+
+.title_intro {
+    font-family: Helvetica, sans-serif;
+    font-size: 150px;
+    text-align: center;
+    color: #7074bf;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #7074bf,
+    0 0 82px #7074bf,
+    0 0 92px #7074bf,
+    0 0 102px #7074bf,
+    0 0 151px #7074bf; 
+}
+
+.intro_linner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subtitle_intro {
+    font-family: Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #7074bf;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #7074bf,
+    0 0 82px #7074bf,
+    0 0 92px #7074bf,
+    0 0 102px #7074bf,
+    0 0 151px #7074bf;   
+}
+
+/*Анимация*/
+.title_intro {
+    animation: show 1s;
+}
+
+.subtitle_intro {
+    animation: show 2s;
+}
+
+.container {
+    animation: show 4s;
+}
+
+@keyframes show {
+    from {opacity: 0;} to {opacity: 1;}
+}
+
+/*Вторая страница*/
+
+.container2 {
+    padding: 52px 0;
+}
+
+/*Шапка второй страницы*/
+.section_header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.section_title {
+    font-family: Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color: #7074bf;
+}
+
+.section_subtitle {
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: #8D97A0;
+}
+.contacts {
+    font-family:Helvetica, sans-serif;
+    color: #7074bf;
+    font-size: 25px; 
+    font-weight: 600; 
+    text-decoration: none;
+    transition: color .2s linear;
+}
+.contacts:hover {
+    color: #8D97A0;
+}
+
+/*Картинки*/
+.about_us {
+    display: flex;
+    justify-content: center;
+}
+
+.picture {
+    width: 25%;
+}
+
+.picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Футэр*/
+.end {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #7074bf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ending {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.end_cont {
+    border-radius: 100%;
+}
+
+/*Адаптивность*/ 
+
+/*Адаптивность для навигационного меню*/
+@media screen and (max-width: 1050px) {
+    .header {
+        padding-top: 15px;
+    }
+    
+    .container {
+        height: 100px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 82px;
+    }
+
+    .nav_text {
+        font-size: 30px;
+    }
+}
+
+/*Адаптивность для Бренда*/
+@media screen and (max-width: 1050px) {
+    .title_intro {
+        font-size: 100px;
+    }
+
+    .subtitle_intro {
+        width: 400px;
+        margin: 0 auto;
+        font-size: 35px;
+    }
+}   
+
+
+/*Адаптивность для второй страницы*/
+@media screen and (max-width: 1050px) {
+    .container2 {
+        padding: 130px;
+        justify-content: center;
+    }
+
+    .about_us {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .picture {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+}

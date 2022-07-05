@@ -1,0 +1,342 @@
+body {
+    margin: 0 auto;
+    min-height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Навигационное меню*/
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #8D97A0;
+}
+
+.logo {
+    border-radius: 100%;
+}
+
+.nav_text {
+    font-family:Helvetica, sans-serif;
+    color:white;
+    font-size: 40px; 
+    font-weight: 600; 
+    text-decoration: none
+}
+.nav_text {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    transition: color .2s linear;
+}
+.nav_text:hover {
+    color: #7074bf;
+}
+
+.header_linner {
+    display: flex;
+    align-items: center;
+}
+
+/*Одежда*/
+.clothes {
+    width: 100%;
+    min-height: 100%;
+}
+
+/*1-й ряд Худи*/
+.container1 {
+    justify-content: center;
+    height: 500px;
+}
+
+.us_hoodie1 {
+    display: flex;
+    justify-content: center;
+}
+
+.hoodie {
+    width: 30%;
+    text-align: center;
+}
+
+/*2-й ряд Футболок*/
+.container2 {
+    justify-content: center;
+    height: 500px;
+}
+
+.us_t-shirt1 {
+    display: flex;
+    justify-content: center;
+}
+
+.t-shirt {
+    width: 30%;
+    text-align: center;
+}
+
+/*Название вещей и цена*/
+.title_all {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #8D97A0;
+}
+
+.price_all {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: #8D97A0;
+}
+
+
+/*Страница с выбранной одеждой*/
+#selected_clothes1 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#selected_clothes2 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#selected_clothes3 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#selected_clothes4 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#selected_clothes1:target {
+    display: block;
+}
+
+#selected_clothes2:target {
+    display: block;
+}
+
+#selected_clothes3:target {
+    display: block;
+}
+
+#selected_clothes4:target {
+    display: block;
+}
+
+#full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.full:target {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    padding: 40px;
+}
+
+.hoodie1 {
+    padding: 150px;
+} 
+
+.t-shirt1 {
+    padding: 150px;
+} 
+ 
+.information {
+    display: flex;
+    justify-content: center;
+}
+
+/*Картинки и Слайдер*/
+.slider1 {
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider2 {
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider3 {
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider4 {
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider-line1 {
+    height: 500px;
+    width: 1350px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider-line2 {
+    height: 500px;
+    width: 1350px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider-line3 {
+    height: 500px;
+    width: 1350px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider-line4 {
+    height: 500px;
+    width: 1350px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/*Вся инфа о выбранной одежде*/
+.hoodie1 {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    color: #8D97A0;
+}
+.price {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    color: #8D97A0;
+}
+
+.size {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: #8D97A0;
+}
+
+.description {
+    font-family: Helvetica, sans-serif;
+    color: #8D97A0;
+}
+
+
+/*Адаптивность*/
+
+/*Адаптивность для навигационного меню*/
+@media screen and (max-width: 1050px) {
+    .header {
+        padding-top: 15px;
+    }
+    
+    .container {
+        height: 52px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 52px;
+    }
+
+    .nav_text {
+        font-size: 20px;
+    }
+}
+
+/*Адаптивность 1-ого ряда худи*/
+@media screen and (max-width: 1050px) {
+    .us_hoodie1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hoodie {
+        width: 100%;
+    }
+}
+/*Адаптивность 2-ого ряда футболок*/
+@media screen and (max-width: 1050px) {
+    .us_t-shirt1 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 250px;
+    }
+
+    .t-shirt {
+        width: 100%;
+    }
+}
+
+/*Адаптивность модального окна*/
+
+@media screen and (max-width: 1050px) {
+    
+}
